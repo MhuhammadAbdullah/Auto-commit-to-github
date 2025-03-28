@@ -2,7 +2,7 @@ name: Smart Auto Commit
 
 on:
   schedule:
-    - cron: '0 23 * * *'  # Run daily at 11:00 PM UTC (4 AM Pakistan Time)
+    - cron: '0 0 * * *'  # Run daily at 12:00 AM UTC (5 AM Pakistan Time)
   workflow_dispatch:  # Manually trigger karne ka option bhi
 
 jobs:
@@ -29,4 +29,3 @@ jobs:
           git add .
           git commit -m "Backup commit to maintain streak - $(date)"
           git push
-
