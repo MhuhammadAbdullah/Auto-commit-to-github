@@ -24,8 +24,8 @@ jobs:
       - name: Auto Commit (Only if No Commit Today)
         run: |
           date > last-updated.txt
-          git config --global user.name "moiz-xyz"
-          git config --global user.email "a.moizniaxi123@gmail.com"
+          git config --global user.name "MhuhammadAbdullah"
+          git config --global user.email "abaloch0033@gmail.com"
           git add .
           git commit -m "Backup commit to maintain streak - $(date)"
           git push
